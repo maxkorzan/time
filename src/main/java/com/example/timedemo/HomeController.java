@@ -34,4 +34,14 @@ public class HomeController {
         return "gallery";
     }
 
+    @RequestMapping("/setup")
+    public String setup(){
+        return "setup";
+    }
+
+    @RequestMapping("/gallery")
+    public String gallery(){
+        return "gallery";
+    }
+
 }
