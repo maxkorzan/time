@@ -7,32 +7,89 @@
 </head>
 <body>
 
-<h1>Format ISO</h1>
-<p th:text="${#dates.formatISO(standardDate)}"></p>
-<p th:text="${#temporals.formatISO(localDateTime)}"></p>
-<p th:text="${#temporals.formatISO(localDate)}"></p>
-<p th:text="${#temporals.formatISO(timestamp)}"></p>
+<div class="container">
+    <div class="row">
+        <div class="col-12" style="text-align: center">
+            <br>
+            <h1 class=header style="text-align: center;">TIME IS AN ILLUSION</h1>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+    </div>
 
-<h1>Format manually</h1>
-<p th:text="${#dates.format(standardDate, 'MM-dd-yyyy HH:mm')}"></p>
-<p th:text="${#temporals.format(localDateTime, 'dd-MM-yyyy HH:mm')}"></p>
-<p th:text="${#temporals.format(localDate, 'MM-dd-yyyy')}"></p>
+
+    <div class="row">
+        <div class="col-6">
+            <h3>Format ISO</h3>
+            <p th:text="${#dates.formatISO(standardDate)}"></p>
+            <p th:text="${#temporals.formatISO(localDateTime)}"></p>
+            <p th:text="${#temporals.formatISO(localDate)}"></p>
+            <p th:text="${#temporals.formatISO(timestamp)}"></p>
+        </div>
+        <div class="col-6" style="text-align: center">
+            <img class="d-block w-100" src="formatiso.PNG" alt="Format ISO">
+        </div>
+    </div>
+    <hr>
+
+    <div class="row">
+        <div class="col-6">
+            <h3>Format manually</h3>
+            <p th:text="${#dates.format(standardDate, 'MM-dd-yyyy HH:mm')}"></p>
+            <p th:text="${#temporals.format(localDateTime, 'dd-MM-yyyy HH:mm')}"></p>
+            <p th:text="${#temporals.format(localDate, 'MM-dd-yyyy')}"></p>
+        </div>
+        <div class="col-6" style="text-align: center">
+            <img class="d-block w-100" src="formatmanually.PNG" alt="Format Manually">
+        </div>
+    </div>
+    <hr>
+
+    <div class="row">
+        <div class="col-6" >
+            <h3>Show only which day of a week</h3>
+            <p th:text="${#dates.day(standardDate)}"></p>
+            <p th:text="${#temporals.day(localDateTime)}"></p>
+            <p th:text="${#temporals.day(localDate)}"></p>
+        </div>
+        <div class="col-6" style="text-align: center">
+            <img class="d-block w-100" src="showonlyday.PNG" alt="Show only day">
+        </div>
+    </div>
+    <hr>
+
+    <div class="row">
+        <div class="col-6" >
+            <h3>Show the name of the week day</h3>
+            <p th:text="${#dates.dayOfWeekName(standardDate)}"></p>
+            <p th:text="${#temporals.dayOfWeekName(localDateTime)}"></p>
+            <p th:text="${#temporals.dayOfWeekName(localDate)}"></p>
+        </div>
+        <div class="col-6" style="text-align: center">
+            <img class="d-block w-100" src="showdayname.PNG" alt="show day name">
+        </div>
+    </div>
+    <hr>
+
+    <div class="row">
+        <div class="col-6" >
+            <h3>Show the second of the day</h3>
+            <p th:text="${#dates.second(standardDate)}"></p>
+            <p th:text="${#temporals.second(localDateTime)}"></p>
+        </div>
+        <div class="col-6" style="text-align: center">
+            <img class="d-block w-100" src="showdaysecond.PNG" alt="show day second">
+        </div>
+    </div>
+    <hr>
 
 
-<h1>Show only which day of a week</h1>
-<p th:text="${#dates.day(standardDate)}"></p>
-<p th:text="${#temporals.day(localDateTime)}"></p>
-<p th:text="${#temporals.day(localDate)}"></p>
+    <div class="row">
+    </div>
 
-<h1>Show the name of the week day</h1>
-<p th:text="${#dates.dayOfWeekName(standardDate)}"></p>
-<p th:text="${#temporals.dayOfWeekName(localDateTime)}"></p>
-<p th:text="${#temporals.dayOfWeekName(localDate)}"></p>
-
-<h1>Show the second of the day</h1>
-<p th:text="${#dates.second(standardDate)}"></p>
-<p th:text="${#temporals.second(localDateTime)}"></p>
-
+</div>
 
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

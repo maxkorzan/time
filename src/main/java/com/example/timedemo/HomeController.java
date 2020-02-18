@@ -24,6 +24,15 @@ public class HomeController {
 
         return "index";
     }
+    @RequestMapping("/setup")
+    public String setup(){
+        return "setup";
+    }
+
+    @RequestMapping("/gallery")
+    public String gallery(){
+        return "gallery";
+    }
 
     @RequestMapping("/setup")
     public String setup(){
