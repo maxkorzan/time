@@ -23,6 +23,8 @@ header{
     border-bottom: 1px solid black;
 }
 header h1{
+    padding-top: 20px;
+    padding-left: 50px;
     float: left;
 }
 header li{
@@ -31,6 +33,10 @@ header li{
     display: inline-block;
     size: 30px;
     text-decoration: none;
+    text-size: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: black;
 }
 header li:hover{
     color: white;

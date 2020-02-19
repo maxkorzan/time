@@ -16,7 +16,7 @@ import java.util.Date;
 @Controller
 public class HomeController {
     @RequestMapping("/")
-    public String index(Model model){
+    public String index(Model model) {
         model.addAttribute("standardDate", new Date());
         model.addAttribute("localDateTime", LocalDateTime.now());
         model.addAttribute("localDate", LocalDate.now());
@@ -24,24 +24,16 @@ public class HomeController {
 
         return "index";
     }
+
     @RequestMapping("/setup")
-    public String setup(){
+    public String setup() {
         return "setup";
     }
 
     @RequestMapping("/gallery")
-    public String gallery(){
-        return "gallery";
-    }
-
-    @RequestMapping("/setup")
-    public String setup(){
-        return "setup";
-    }
-
-    @RequestMapping("/gallery")
-    public String gallery(){
+    public String gallery() {
         return "gallery";
     }
 
 }
+
